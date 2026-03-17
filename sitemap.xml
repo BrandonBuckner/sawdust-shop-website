@@ -1,87 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.thesawdustshop.com/</loc>
+    <loc>https://www.thesawdustshopwi.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.thesawdustshop.com/projects/</loc>
+    <loc>https://www.thesawdustshopwi.com/projects/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.thesawdustshop.com/projects/patio-sets/</loc>
+    <loc>https://www.thesawdustshopwi.com/projects/patio-sets/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.thesawdustshop.com/projects/swings/</loc>
+    <loc>https://www.thesawdustshopwi.com/projects/swings/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.thesawdustshop.com/projects/benches/</loc>
+    <loc>https://www.thesawdustshopwi.com/projects/benches/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.thesawdustshop.com/projects/garden-boxes/</loc>
+    <loc>https://www.thesawdustshopwi.com/projects/garden-boxes/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.thesawdustshop.com/projects/custom-builds/</loc>
+    <loc>https://www.thesawdustshopwi.com/projects/custom-builds/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.thesawdustshop.com/about/</loc>
+    <loc>https://www.thesawdustshopwi.com/projects/mailboxes/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.thesawdustshopwi.com/projects/wishing-wells/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.thesawdustshopwi.com/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.thesawdustshop.com/faq/</loc>
+    <loc>https://www.thesawdustshopwi.com/faq/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.thesawdustshop.com/contact/</loc>
+    <loc>https://www.thesawdustshopwi.com/contact/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.thesawdustshop.com/service-areas/caledonia-wi/</loc>
+    <loc>https://www.thesawdustshopwi.com/service-areas/caledonia-wi/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.thesawdustshop.com/service-areas/oak-creek-wi/</loc>
+    <loc>https://www.thesawdustshopwi.com/service-areas/oak-creek-wi/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.thesawdustshop.com/service-areas/south-milwaukee-wi/</loc>
+    <loc>https://www.thesawdustshopwi.com/service-areas/south-milwaukee-wi/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.thesawdustshop.com/service-areas/racine-wi/</loc>
+    <loc>https://www.thesawdustshopwi.com/service-areas/racine-wi/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.thesawdustshop.com/service-areas/franklin-wi/</loc>
+    <loc>https://www.thesawdustshopwi.com/service-areas/franklin-wi/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.thesawdustshop.com/service-areas/cudahy-wi/</loc>
+    <loc>https://www.thesawdustshopwi.com/service-areas/cudahy-wi/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.thesawdustshop.com/service-areas/st-francis-wi/</loc>
+    <loc>https://www.thesawdustshopwi.com/service-areas/st-francis-wi/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

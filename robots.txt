@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.thesawdustshop.com/sitemap.xml
+Sitemap: https://www.thesawdustshopwi.com/sitemap.xml
+
+# AI crawler guidance
+LLMs: https://www.thesawdustshopwi.com/llms.txt
