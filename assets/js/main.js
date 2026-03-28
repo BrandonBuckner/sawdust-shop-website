@@ -127,6 +127,53 @@ document.addEventListener('DOMContentLoaded', function () {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   }
 
+  /* --- Image Carousel --- */
+  document.querySelectorAll('[data-carousel]').forEach(function(container) {
+    var slides = JSON.parse(container.dataset.carousel);
+    if (slides.length < 2) return;
+
+    var img = container.querySelector('img');
+    var source = container.querySelector('source');
+    var current = 0;
+
+    var prevBtn = document.createElement('button');
+    prevBtn.className = 'carousel-btn carousel-btn--prev';
+    prevBtn.setAttribute('aria-label', 'Previous image');
+    prevBtn.innerHTML = '&#8249;';
+
+    var nextBtn = document.createElement('button');
+    nextBtn.className = 'carousel-btn carousel-btn--next';
+    nextBtn.setAttribute('aria-label', 'Next image');
+    nextBtn.innerHTML = '&#8250;';
+
+    var dotsEl = document.createElement('div');
+    dotsEl.className = 'carousel-dots';
+
+    var dots = slides.map(function(slide, i) {
+      var dot = document.createElement('button');
+      dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', 'Image ' + (i + 1));
+      dot.addEventListener('click', function() { goTo(i); });
+      dotsEl.appendChild(dot);
+      return dot;
+    });
+
+    container.appendChild(prevBtn);
+    container.appendChild(nextBtn);
+    container.appendChild(dotsEl);
+
+    function goTo(index) {
+      current = (index + slides.length) % slides.length;
+      img.src = slides[current].src;
+      img.alt = slides[current].alt;
+      if (source) source.srcset = slides[current].webp || '';
+      dots.forEach(function(d, i) { d.classList.toggle('active', i === current); });
+    }
+
+    prevBtn.addEventListener('click', function() { goTo(current - 1); });
+    nextBtn.addEventListener('click', function() { goTo(current + 1); });
+  });
+
   /* --- Lazy Load Images --- */
   var lazyImages = document.querySelectorAll('img[loading="lazy"]');
   lazyImages.forEach(function (img) {

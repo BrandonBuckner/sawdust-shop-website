@@ -718,9 +718,62 @@ p + p { margin-top: 1rem; }
 }
 
 .project-entry__image {
+  position: relative;
   border-radius: 6px;
   overflow: hidden;
 }
+
+/* Carousel containers must not clip buttons — push border-radius onto the image */
+.project-entry__image[data-carousel] {
+  overflow: visible;
+}
+.project-entry__image[data-carousel] img {
+  border-radius: 6px;
+}
+
+/* --- Image Carousel --- */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  border: none;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+.carousel-btn:hover { background: rgba(0, 0, 0, 0.7); }
+.carousel-btn--prev { left: 0.6rem; }
+.carousel-btn--next { right: 0.6rem; }
+
+.carousel-dots {
+  position: absolute;
+  bottom: 0.6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.35rem;
+}
+.carousel-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.55);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s;
+}
+.carousel-dot.active { background: #fff; }
 
 .project-entry__image img {
   width: 100%;
@@ -752,6 +805,41 @@ p + p { margin-top: 1rem; }
   color: var(--warm-amber);
   font-weight: 600;
   margin-bottom: 1rem;
+}
+
+/* --- Custom Theme Callout (e.g. wishing wells custom colors) --- */
+.custom-theme-callout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: var(--cream);
+  border-radius: 6px;
+}
+
+.custom-theme-callout__image {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.custom-theme-callout__image img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.custom-theme-callout__text h3 {
+  margin-bottom: 0.75rem;
+}
+
+.custom-theme-callout__text p {
+  color: var(--medium-wood);
+  margin-bottom: 1.25rem;
+  line-height: 1.7;
 }
 
 /* --- Projects Hub (filter bar) --- */
@@ -1124,6 +1212,10 @@ p + p { margin-top: 1rem; }
   }
 
   .project-entry {
+    grid-template-columns: 1fr;
+  }
+
+  .custom-theme-callout {
     grid-template-columns: 1fr;
   }
 
