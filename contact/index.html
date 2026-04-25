@@ -59,7 +59,7 @@
   <nav class="site-nav" role="navigation" aria-label="Main navigation">
     <div class="site-nav__inner">
       <a href="../" class="site-nav__logo"><img src="../assets/images/logos/saw-dust-shop-logo.jpg" alt="The Saw Dust Shop logo" width="44" height="44"><span>The Saw Dust Shop</span></a>
-      <ul class="site-nav__links"><li><a href="../">Home</a></li><li><a href="../projects/">Projects</a></li><li><a href="../about/">About</a></li><li><a href="../faq/">FAQ</a></li><li class="site-nav__cta"><a href="../contact/" class="btn btn--primary">Request a Quote</a></li></ul>
+      <ul class="site-nav__links"><li><a href="../">Home</a></li><li><a href="../projects/">Projects</a></li><li><a href="../about/">About</a></li><li><a href="../faq/">FAQ</a></li><!-- TEMP_DISABLED_CONTACT_FORM_START --><li class="site-nav__cta"><a href="../contact/" class="btn btn--primary">Request a Quote</a></li><!-- TEMP_DISABLED_CONTACT_FORM_END --></ul>
       <button class="nav-toggle" aria-label="Toggle navigation menu"><span></span><span></span><span></span></button>
     </div>
   </nav>
@@ -78,7 +78,7 @@
 
         <div class="contact-info">
           <h3>Let's Talk About Your Project</h3>
-          <p>Fill out the form and we'll get back to you as soon as we can — usually within a day or two. If you'd prefer to call, that works too.</p>
+          <p>Give us a call or message us on Facebook and we'll get back to you as soon as we can — usually within a day or two.</p>
 
           <div class="contact-info__detail">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
@@ -100,74 +100,16 @@
           <p style="margin-top: 2rem; font-size: 0.9rem; color: var(--medium-wood);">Not sure what you need? No problem — just describe your space and what you're thinking, and we'll help figure out the best option.</p>
         </div>
 
-        <div class="contact-form">
-          <form id="quote-form" novalidate>
-            <!-- Honeypot field for spam prevention -->
-            <div class="form-hp" aria-hidden="true">
-              <label for="website-url">Leave this blank</label>
-              <input type="text" id="website-url" name="website-url" tabindex="-1" autocomplete="off">
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name">Name *</label>
-                <input type="text" id="name" name="name" required placeholder="Your name">
-              </div>
-              <div class="form-group">
-                <label for="email">Email *</label>
-                <input type="email" id="email" name="email" required placeholder="your@email.com">
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="phone">Phone (optional)</label>
-                <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
-              </div>
-              <div class="form-group">
-                <label for="city">City / Location</label>
-                <input type="text" id="city" name="city" placeholder="e.g., Oak Creek, WI">
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="interest">What are you interested in?</label>
-              <select id="interest" name="interest">
-                <option value="">Select a project type...</option>
-                <option value="Patio Set">Patio Set</option>
-                <option value="Swing">Swing</option>
-                <option value="Bench">Bench</option>
-                <option value="Garden Box">Garden Box</option>
-                <option value="Custom Build">Custom Build</option>
-                <option value="Mailbox">Mailbox</option>
-                <option value="Decorative Well">Decorative Well</option>
-                <option value="Other">Other / Not Sure</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="message">Tell Us About Your Project *</label>
-              <textarea id="message" name="message" required placeholder="Describe what you're looking for — size, style, stain color, any custom details..."></textarea>
-            </div>
-
-            <div class="form-group">
-              <label for="referral">How did you hear about us? (optional)</label>
-              <select id="referral" name="referral">
-                <option value="">Select...</option>
-                <option value="Google Search">Google Search</option>
-                <option value="Facebook">Facebook</option>
-                <option value="Word of Mouth">Word of Mouth</option>
-                <option value="Saw at Market/Event">Saw at Market/Event</option>
-                <option value="Drove By">Drove By</option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
-
-            <button type="submit" class="btn btn--primary" style="width: 100%;">Send Quote Request</button>
-
-            <div id="form-status" class="form-status"></div>
-          </form>
+        <!-- TEMP_DISABLED_CONTACT_FORM_START -->
+        <div class="contact-form" style="display:flex;align-items:center;justify-content:center;padding:3rem 2rem;">
+          <div style="text-align:center;">
+            <h3 style="margin-bottom:1rem;">Online Form Temporarily Unavailable</h3>
+            <p style="margin-bottom:1.5rem;">We're currently updating our quote form. In the meantime, please reach us by phone or message us on Facebook and we'll be happy to help.</p>
+            <a href="tel:2624880879" class="btn btn--primary">(262) 488-0879</a>
+            <a href="https://m.me/TheSawDustShop2017" target="_blank" rel="noopener noreferrer" class="btn btn--outline" style="margin-top:0.75rem;">Message on Facebook</a>
+          </div>
         </div>
+        <!-- TEMP_DISABLED_CONTACT_FORM_END -->
 
       </div>
     </div>
